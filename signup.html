@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body">
+    <div class="auth-header">
+        <a href="index.html">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="logo">
+        </a>
+    </div>
+
+    <div class="auth-card">
+        <h2>Create Account</h2>
+        <p style="color: #aaa; margin-bottom: 20px; font-size: 0.95rem;">Ready to experience premium entertainment?</p>
+        <form id="registerForm">
+            <div class="input-group">
+                <input type="email" id="regEmail" required>
+                <label>Email address</label>
+                <span class="error-msg" id="regEmailError"></span>
+            </div>
+            <div class="input-group">
+                <input type="password" id="regPassword" required>
+                <label>Add a password</label>
+                <span class="error-msg" id="regPassError"></span>
+            </div>
+            <button type="submit" class="btn-auth-submit">Get Started</button>
+        </form>
+
+        <div class="auth-switch">
+            <p>Already have an account? <a href="signin.html">Sign in here</a>.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

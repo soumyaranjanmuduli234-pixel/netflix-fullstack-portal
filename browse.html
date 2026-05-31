@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Browse Home - Netflix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="browse-nav">
+        <div class="nav-left">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="logo">
+            <ul class="nav-links">
+                <li class="active"><a href="browse.html">Home</a></li>
+                <li><a href="tvshows.html">TV Shows</a></li>
+                <li><a href="movies.html">Movies</a></li>
+                <li><a href="newpopular.html">New & Popular</a></li>
+                <li><a href="mylist.html">My List</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <i class="fa-solid fa-magnifying-glass nav-icon"></i>
+            <i class="fa-solid fa-bell nav-icon"></i>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="Avatar" class="avatar">
+            <a href="index.html" class="btn-logout-hub">Go to Home</a>
+        </div>
+    </nav>
+
+    <div class="billboard">
+        <div class="billboard-content">
+            <h1 class="movie-title">STRANGER THINGS</h1>
+            <p class="movie-desc">When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces and one strange little girl.</p>
+            <div class="billboard-buttons">
+                <button class="btn-play"><i class="fa-solid fa-play"></i> Play</button>
+                <button class="btn-info"><i class="fa-solid fa-circle-info"></i> More Info</button>
+            </div>
+        </div>
+        <div class="billboard-overlay"></div>
+    </div>
+
+    <div class="rows-container">
+        <div class="movie-row">
+            <h2>Trending Now</h2>
+            <div class="row-posters">
+                <div class="browse-card"><img src="https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?q=80&w=400"><div class="c-overlay"><i class="fa-solid fa-play"></i></div></div>
+                <div class="browse-card"><img src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?q=80&w=400"><div class="c-overlay"><i class="fa-solid fa-play"></i></div></div>
+                <div class="browse-card"><img src="https://images.unsplash.com/photo-1509281373149-e957c6296406?q=80&w=400"><div class="c-overlay"><i class="fa-solid fa-play"></i></div></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

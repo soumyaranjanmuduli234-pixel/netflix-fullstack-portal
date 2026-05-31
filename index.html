@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India - Watch TV Shows Online</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="hero">
+        <div class="navbar">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix Logo" class="logo">
+            <div class="nav-buttons">
+                <select class="lang-btn">
+                    <option>English</option>
+                    <option>हिन्दी</option>
+                </select>
+                <a href="signin.html" class="btn-signin">Sign In</a>
+            </div>
+        </div>
+
+        <div class="hero-content">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <p class="subtitle">Watch anywhere. Cancel anytime.</p>
+            <p class="email-text">Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="email-form" id="heroEmailForm">
+                <input type="email" id="heroEmailInput" placeholder="Email address" required>
+                <button type="submit">Get Started <i class="fa-solid fa-chevron-right"></i></button>
+            </form>
+        </div>
+    </header>
+
+    <hr class="section-divider">
+
+    <section class="faq-section">
+        <h2>Frequently Asked Questions</h2>
+        <div class="accordion">
+            <div class="faq-item">
+                <button class="faq-question">What is Netflix? <i class="fa-solid fa-plus"></i></button>
+                <div class="faq-answer">
+                    <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">How much does Netflix cost? <i class="fa-solid fa-plus"></i></button>
+                <div class="faq-answer">
+                    <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
