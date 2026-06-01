@@ -3,44 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix - Sign In</title>
+    <title>Netflix</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="auth-body">
+    
     <div class="auth-header">
         <a href="index.html">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" alt="Netflix" class="logo">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg" class="logo" alt="Netflix Logo">
         </a>
     </div>
 
     <div class="auth-card">
         <h2>Sign In</h2>
-        <form id="loginForm">
+        
+        <form id="signinForm">
             <div class="input-group">
-                <input type="text" id="loginEmail" required>
-                <label>Email or mobile number</label>
-                <span class="error-msg" id="emailError"></span>
+                <input type="email" id="signinEmail" placeholder="Email or mobile number" required autocomplete="email">
             </div>
-            <div class="input-group">
-                <input type="password" id="loginPassword" required>
-                <label>Password</label>
-                <span class="error-msg" id="passwordError"></span>
-            </div>
-            <button type="submit" class="btn-auth-submit">Sign In</button>
             
-            <div class="auth-help">
-                <div>
-                    <input type="checkbox" id="rememberMe" checked>
-                    <label for="rememberMe" class="remember-label">Remember me</label>
-                </div>
-                <a href="#">Need help?</a>
+            <div class="input-group">
+                <input type="password" id="signinPassword" placeholder="Password" required autocomplete="current-password">
             </div>
+
+            <div id="signinMessage" class="status-message"></div>
+
+            <button type="submit" class="auth-btn">Sign In</button>
         </form>
 
-        <div class="auth-switch">
-            <p>New to Netflix? <a href="signup.html">Sign up now</a>.</p>
+        <div class="auth-help">
+            <div class="remember-me">
+                <input type="checkbox" id="rememberMe">
+                <label for="rememberMe">Remember me</label>
+            </div>
+            <a href="#">Need help?</a>
+        </div>
+
+        <div class="auth-footer-text">
+            <p>New to Netflix? <a href="signup.html">Sign up now.</a></p>
+            <p class="captcha-disclaimer">
+                This page is protected by Google reCAPTCHA to ensure you're not a bot.
+            </p>
         </div>
     </div>
+
     <script src="script.js"></script>
 </body>
 </html>
