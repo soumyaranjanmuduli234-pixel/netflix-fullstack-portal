@@ -539,3 +539,12 @@ body {
     .billboard-content { max-width: 80%; }
     .movie-title { font-size: 2.5rem; }
 }
+
+/* Status Messages Styling for Live Feedback */
+.status-message {
+    margin: 12px 0;
+    font-size: 14px;
+    text-align: left;
+    min-height: 18px;
+    font-weight: 500;
+}

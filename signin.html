@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Netflix</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Netflix - Sign In</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body class="auth-body">
     
@@ -19,14 +19,14 @@
         
         <form id="signinForm">
             <div class="input-group">
-                <input type="email" id="signinEmail" placeholder="Email or mobile number" required autocomplete="email">
+                <input type="email" id="signinEmail" placeholder="Email address" required autocomplete="email">
             </div>
             
             <div class="input-group">
                 <input type="password" id="signinPassword" placeholder="Password" required autocomplete="current-password">
             </div>
 
-            <div id="signinMessage" class="status-message"></div>
+            <div id="signinMessage" class="status-message" style="margin-top: 10px; font-weight: bold;"></div>
 
             <button type="submit" class="auth-btn">Sign In</button>
         </form>
@@ -41,12 +41,9 @@
 
         <div class="auth-footer-text">
             <p>New to Netflix? <a href="signup.html">Sign up now.</a></p>
-            <p class="captcha-disclaimer">
-                This page is protected by Google reCAPTCHA to ensure you're not a bot.
-            </p>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
 </body>
 </html>
