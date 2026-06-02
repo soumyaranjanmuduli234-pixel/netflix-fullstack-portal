@@ -1,4 +1,5 @@
-const BACKEND_URL = 'https://netflix-backend-xnby.onrender.com';
+// 🌐 LOCAL HOST BACKEND PIPELINE ACTIVE
+const BACKEND_URL = 'http://127.0.0.1:5000';
 
 document.addEventListener('DOMContentLoaded', () => {
 
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // --- 3. LIVE SIGNUP PIPELINE (NO AUTO-REFRESH) ---
+    // --- 3. LOCAL SIGNUP PIPELINE (NO AUTO-REFRESH) ---
     const signupForm = document.getElementById('signupForm');
     if (signupForm) {
         signupForm.addEventListener('submit', async (e) => {
@@ -35,7 +36,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 messageBox.style.color = '#f1c40f'; // Yellow status text
-                messageBox.innerText = 'Connecting with cloud database...';
+                messageBox.innerText = 'Connecting with local database engine...';
 
                 const response = await fetch(`${BACKEND_URL}/api/auth/signup`, {
                     method: 'POST',
@@ -56,14 +57,14 @@ document.addEventListener('DOMContentLoaded', () => {
                     messageBox.innerText = data.error || 'Signup failed. User might exist.';
                 }
             } catch (error) {
-                console.error('Signup core break:', error);
+                console.error('Local Signup core break:', error);
                 messageBox.style.color = '#e74c3c';
-                messageBox.innerText = 'Server Timeout. Waking up Render Free Container...';
+                messageBox.innerText = 'Local Server down! Run "python app.py" first.';
             }
         });
     }
 
-    // --- 4. LIVE SIGNIN PIPELINE ---
+    // --- 4. LOCAL SIGNIN PIPELINE ---
     const signinForm = document.getElementById('signinForm');
     if (signinForm) {
         signinForm.addEventListener('submit', async (e) => {
@@ -75,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             try {
                 messageBox.style.color = '#f1c40f';
-                messageBox.innerText = 'Verifying identity keys...';
+                messageBox.innerText = 'Verifying security keys locally...';
 
                 const response = await fetch(`${BACKEND_URL}/api/auth/signin`, {
                     method: 'POST',
@@ -100,9 +101,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     messageBox.innerText = data.error || 'Invalid credentials.';
                 }
             } catch (error) {
-                console.error('Signin core break:', error);
+                console.error('Local Signin core break:', error);
                 messageBox.style.color = '#e74c3c';
-                messageBox.innerText = 'Database validation engine offline.';
+                messageBox.innerText = 'Local database verification engine offline.';
             }
         });
     }
