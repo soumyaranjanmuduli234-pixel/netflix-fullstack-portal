@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix - Sign In</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body class="auth-body">
     
@@ -28,22 +28,22 @@
 
             <div id="signinMessage" class="status-message" style="margin-top: 10px; font-weight: bold;"></div>
 
-            <button type="submit" class="auth-btn">Sign In</button>
+            <button type="submit" class="auth-btn" style="width: 100%; padding: 16px; background-color: #e50914; color: white; border: none; font-size: 16px; font-weight: bold; border-radius: 4px; cursor: pointer; margin-top: 20px;">Sign In</button>
         </form>
 
-        <div class="auth-help">
+        <div class="auth-help" style="margin-top: 15px; display: flex; justify-content: space-between; font-size: 12px; color: #b3b3b3;">
             <div class="remember-me">
                 <input type="checkbox" id="rememberMe">
-                <label for="rememberMe">Remember me</label>
+                <label for="rememberMe" style="margin-left: 5px;">Remember me</label>
             </div>
-            <a href="#">Need help?</a>
+            <a href="#" style="color: #b3b3b3; text-decoration: none;">Need help?</a>
         </div>
 
-        <div class="auth-footer-text">
-            <p>New to Netflix? <a href="signup.html">Sign up now.</a></p>
+        <div class="auth-footer-text" style="margin-top: 30px; color: #737373; font-size: 14px;">
+            <p>New to Netflix? <a href="signup.html" style="color: white; text-decoration: none;">Sign up now.</a></p>
         </div>
     </div>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
